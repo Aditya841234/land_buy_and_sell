@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+        }
+        .container {
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 2px solid #ff5e62;
+            border-radius: 6px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus {
+            border-color: #ff9966;
+        }
+        button {
+            margin-top: 15px;
+            padding: 12px;
+            background: #ff5e62;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff9966;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Insert Your Land Information</h2>
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <label for="land-photo">Land Photo:</label>
+            <input type="file" id="land-photo" name="land-photo" accept="image/*" required>
+            
+            <label for="land-id">Land ID:</label>
+            <input type="text" id="land-id" name="land-id" required>
+            
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+            
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

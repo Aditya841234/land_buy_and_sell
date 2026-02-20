@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Suggestions</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+        .contact-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="land1.jpg" alt="Land 1">
+            <p><strong>Land ID:</strong> 101</p>
+            <p class="price">Price: $50,000</p>
+            <p><strong>Owner Contact:</strong> +1234567890</p>
+            <button class="contact-button">Contact</button>
+        </div>
+        <div class="card">
+            <img src="land2.jpg" alt="Land 2">
+            <p><strong>Land ID:</strong> 102</p>
+            <p class="price">Price: $75,000</p>
+            <p><strong>Owner Contact:</strong> +0987654321</p>
+            <button class="contact-button">Contact</button>
+        </div>
+        <!-- Add more land listings as needed -->
+    </div>
+</body>
+</html>
